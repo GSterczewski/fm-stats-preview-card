@@ -3,6 +3,7 @@
   --color-dark-desaturated-blue: hsl(244, 38%, 16%);
   --color-soft-violet: hsl(277, 64%, 61%);
   --color-white: hsl(0, 0%, 100%);
+  --color-overlay: #5a0f8a;
   --color-white-slighlty-transparent: hsla(0, 0%, 100%, 0.75);
   --color-white-transparent: hsla(0, 0%, 100%, 0.6);
   --font-inter: "Inter", sans-serif;
@@ -65,10 +66,24 @@ body {
   border-collapse: collapse;
 }
 
+.card__image-container {
+  width: 100%;
+  position: relative;
+}
 .card__image {
   width: 100%;
+  display: block;
 }
-
+.card__image-overlay {
+  background-color: var(--color-overlay);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.5;
+}
 .card__content__wrapper {
   padding: 2rem 1.5rem;
   display: flex;
@@ -125,7 +140,7 @@ body {
   .card__content__wrapper > p {
     width: 80%;
   }
-  .card__image {
+  .card__image-container {
     width: 50%;
   }
 }
