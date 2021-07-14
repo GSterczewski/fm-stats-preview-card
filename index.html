@@ -10,11 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Stats preview component</title>
   </head>
-  <body>
-    <div class="card-wrapper">
+  <body class="flex-centered">
+    <div class="card">
       <img
+        class="card__image"
         srcset="
           images/image-header-mobile.jpg  654w,
           images/image-header-desktop.jpg 540w
@@ -22,27 +24,28 @@
         sizes="(max-width:600px) 654px, 540px"
         alt=""
       />
-      <section class="card-content">
-        <h1>Get <span>insights</span> that help your business grow.</h1>
-        <p>
-          Get insights that help your business grow. Discover the benefits of
-          data analytics and make better decisions regarding revenue, customer
-          experience, and overall efficiency.
-        </p>
-        <ul>
-          <li>
-            <h2>10k+</h2>
-            <p>companies</p>
-          </li>
-          <li>
-            <h2>314</h2>
-            <p>templates</p>
-          </li>
-          <li>
-            <h2>12m+</h2>
-            <p>queries</p>
-          </li>
-        </ul>
+      <section class="card__content">
+        <div class="card__content__wrapper">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <ul>
+            <li>
+              <h2>10k+</h2>
+              <p class="caption">companies</p>
+            </li>
+            <li>
+              <h2>314</h2>
+              <p class="caption">templates</p>
+            </li>
+            <li>
+              <h2>12m+</h2>
+              <p class="caption">queries</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </body>
