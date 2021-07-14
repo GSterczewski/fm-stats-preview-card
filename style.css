@@ -97,8 +97,8 @@ body {
   font-family: var(--font-lexend);
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: var(--color-white-transparent);
   letter-spacing: 0.1rem;
+  color: var(--color-white-transparent);
 }
 
 @media (min-width: 1440px) {
@@ -126,12 +126,7 @@ body {
     flex-direction: row-reverse;
     width: 75vw;
   }
-  .card__content {
-    /* width: 50%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .card__content__wrapper {
     padding: 0;
     width: 70%;
