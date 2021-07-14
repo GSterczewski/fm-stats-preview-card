@@ -126,12 +126,13 @@ body {
     flex-direction: row-reverse;
     width: 75vw;
   }
-
+  .card__content {
+    width: 50%;
+  }
   .card__content__wrapper {
-    /* padding: 0; */
-    width: 70%;
+    width: 80%;
     align-items: flex-start;
-    padding: 5rem 0;
+    padding: 7rem 0 4rem 0;
   }
   .card__content__wrapper > p {
     width: 80%;
@@ -141,5 +142,6 @@ body {
   }
   .card__image {
     height: 100%;
+    width: 100%;
   }
 }
